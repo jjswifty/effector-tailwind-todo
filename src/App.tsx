@@ -1,10 +1,15 @@
 import {FC} from "react";
+import {MainLayout} from "@/components/Layouts/MainLayout";
+
+
 
 export const App: FC = () => {
     return (
-        <h1 className="text-3xl font-bold underline">
-            Hello world!
-        </h1>
+        <MainLayout backgroundColor='#'>
+            <h1 className="text-3xl">
+                fghjjcfghfghfghfghfghfghfghf
+            </h1>
+        </MainLayout>
     )
 }
 

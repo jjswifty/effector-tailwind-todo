@@ -1,13 +1,9 @@
 {
 	"compilerOptions": {
-		"baseUrl": ".",
 		"paths": {
-			"@modules": ["src/modules/index.ts"],
-			"@customTypes": ["src/types/index.ts"],
-			"@src/*": ["src/"],
-			"@interfaces/*": ["src/interfaces/*"],
-			"@components/*": ["src/components/*"],
-			"@assets/*": ["src/assets/*"],
+			"@/*": [
+				"./src/*"
+			]
 		}
 	}
 }
