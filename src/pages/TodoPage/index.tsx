@@ -1,6 +1,8 @@
 import {FC} from "react";
 
-export const TodoPage = ({}) => {
+export const TodoPage: FC = ({
+
+}) => {
     return <div>
 
     </div>

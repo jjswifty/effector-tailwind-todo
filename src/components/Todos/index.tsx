@@ -1,6 +1,9 @@
 import {FC} from "react";
 
-export const Todo: FC = ({}) => {
+export const Todos: FC = ({
+
+}) => {
+
     return <div>
 
     </div>
