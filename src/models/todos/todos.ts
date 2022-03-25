@@ -1,5 +1,5 @@
 import {createEffect, createEvent, createStore, forward, restore, sample} from "effector";
-import {getPosts} from "@/network/lib/posts";
+import {getTodos} from "@/network/lib/todos";
 import {Todo} from "@/interfaces";
 
 const componentMounted = createEvent<boolean>()
@@ -8,7 +8,7 @@ const newTodoAdded = createEvent<Todo>()
 const newTodoTextChanged = createEvent<string>('')
 
 const getTodosFx = createEffect(async () => {
-    const res = await getPosts()
+    const res = await getTodos()
     return res.data
 })
 
@@ -19,7 +19,7 @@ forward({
 
 const $newTodo = createStore<Todo>({
     title: '',
-    id: 0,
+    id: null,
     completed: false,
 }).on(newTodoTextChanged, (prev, next) => ({
     ...prev,

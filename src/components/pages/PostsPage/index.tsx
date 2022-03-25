@@ -1,6 +1,6 @@
 import {FC, useEffect} from "react";
 import {useStore} from "effector-react";
-import {$todos, componentMounted} from "@/models/posts/posts";
+import {$todos, componentMounted} from "@/models/todos/todos";
 import {$isUserIdGenerated} from "@/models/user/user";
 
 
